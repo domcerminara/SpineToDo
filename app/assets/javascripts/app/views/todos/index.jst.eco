@@ -1,0 +1,12 @@
+<h1>Listing Todos</h1>
+
+<% for todo in @todos: %>
+  <div class="item" data-id="<%= todo.id %>">
+    <a data-type="show"><%= todo.content %></a>
+    
+    <a data-type="edit">Edit</a> 
+    <a data-type="destroy">Destroy</a>
+  </div>
+<% end %>
+
+<p><a data-type="new">New Todo</a></p>

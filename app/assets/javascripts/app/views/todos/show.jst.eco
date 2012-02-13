@@ -1,0 +1,6 @@
+<h1>Show Todo</h1>
+
+<a data-type="edit">Edit</a> <a data-type="back">Back</a>
+
+<p>Content: <%= @content %></p>
+<p>Is Done: <%= @is_done %></p>

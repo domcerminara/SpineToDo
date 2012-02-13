@@ -1,0 +1,27 @@
+<h1>New Todo</h1>
+
+<a data-type="back">Back</a>
+
+<form>
+  
+  <label>
+    <span>Content</span>
+    <input 
+      type="text" name="content" 
+      value="<%= @content %>" required
+ autofocus>
+      <br />
+  </label>
+  
+  <label>
+    <span>Is Done</span>
+    <input 
+      type="text" name="is_done" 
+      value="<%= @is_done %>" required
+>
+      <br />
+  </label>
+  
+  <button>Create</button>
+
+</form>

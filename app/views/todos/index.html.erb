@@ -1,25 +1,7 @@
-<h1>Listing todos</h1>
+<div id ="app"></div>
 
-<table>
-  <tr>
-    <th>Content</th>
-    <th>Is done</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @todos.each do |todo| %>
-  <tr>
-    <td><%= todo.content %></td>
-    <td><%= todo.is_done %></td>
-    <td><%= link_to 'Show', todo %></td>
-    <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
-    <td><%= link_to 'Destroy', todo, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Todo', new_todo_path %>
+<script type="text/javascript">
+  $(function() {
+    new App({el: $('#app')});
+  });
+</script>
